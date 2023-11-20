@@ -10,15 +10,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - kind: linux
-            os: ubuntu-latest
-            platform: linux
           - kind: windows
             os: windows-latest
             platform: win
-          - kind: mac
-            os: macos-11
-            platform: osx
     steps:
       - uses: actions/checkout@v3
 
