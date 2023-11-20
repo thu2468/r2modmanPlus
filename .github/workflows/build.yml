@@ -47,6 +47,12 @@ jobs:
         with:
           run: yarn build-${{ matrix.platform }} --publish=never
 
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: program
+          path: D:\a\r2modmanPlus\r2modmanPlus\dist\electron\
+
       - if: steps.build.outputs.stderr != ''
         name: Log stderr
         continue-on-error: true
