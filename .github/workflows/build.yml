@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: program
-          path: D:\a\r2modmanPlus\r2modmanPlus\dist\electron\
+          path: D:\a\r2modmanPlus\r2modmanPlus\dist\electron\Packaged\
 
       - if: steps.build.outputs.stderr != ''
         name: Log stderr
